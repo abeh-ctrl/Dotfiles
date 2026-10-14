@@ -1,9 +1,0 @@
-.
-├── configuration.nix
-├── flake.lock
-├── flake.nix
-├── hardware-configuration.nix
-├── home.nix
-└── vis.nix
-
-1 directory, 6 files
