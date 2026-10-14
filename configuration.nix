@@ -43,20 +43,20 @@
   services.xserver.enable = true;
 
 
-  
+
   # Niri Settings
     programs.niri.enable = true;
     hardware.graphics.enable = true;
-   
+
     services.greetd = {
        enable = true;
        settings.default_session = {
          command = "${pkgs.tuigreet}/bin/tuigreet --time  --cmd  niri-session";
          user = "greeter";
        };
-     }; 
+     };
 
-  
+
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
@@ -113,6 +113,7 @@
      vscode
      chromium
      qutebrowser
+     ytdownloader
    ];
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
@@ -161,7 +162,7 @@
   system.stateVersion = "26.05"; # Did you read the comment?
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
-  
+
   fonts.packages = with pkgs; [
     noto-fonts-cjk-sans
     nerd-fonts.bigblue-terminal
