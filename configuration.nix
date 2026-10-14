@@ -118,6 +118,7 @@
      fastfetch
      jdk
      pciutils
+     aria2
    ];
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
