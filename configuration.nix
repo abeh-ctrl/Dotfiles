@@ -116,7 +116,7 @@
      ytdownloader
      quickshell
      fastfetch
-     brainfuck
+     jdk
    ];
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
